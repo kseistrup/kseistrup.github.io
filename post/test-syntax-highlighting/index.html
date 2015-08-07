@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <meta property="og:title" content=" Syntax highlighting &middot;  Klaus Alexander Seistrup" />
+  
+  <meta property="og:site_name" content="Klaus Alexander Seistrup" />
+  <meta property="og:url" content="https://kseistrup.github.io/post/test-syntax-highlighting/" />
+  
+  
+  <meta property="og:type" content="article" />
+  
+  <meta property="og:article:published_time" content="2015-08-07T19:41:35&#43;02:00" />
+  
+  <meta property="og:article:tag" content="test" />
+  
+  <meta property="og:article:tag" content="python" />
+  
+  
+
+  <title>
+     Syntax highlighting &middot;  Klaus Alexander Seistrup
+  </title>
+
+  <link rel="stylesheet" href="https://kseistrup.github.io/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://kseistrup.github.io/css/main.css" />
+  <link rel="stylesheet" href="https://kseistrup.github.io/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://kseistrup.github.io/css/github.css" />
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" type="text/css">
+  <link rel="shortcut icon" href="https://kseistrup.github.io/images/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://kseistrup.github.io/images/apple-touch-icon.png" />
+  
+</head>
+<body>
+    <header class="global-header"  style="background-image:url( /images/bg.jpg )">
+    <section class="header-text">
+      <h1><a href="https://kseistrup.github.io/">Klaus Alexander Seistrup</a></h1>
+      
+      <div class="tag-line">
+        Europe/Copenhagen (UTC&#43;2)
+      </div>
+      
+      <div class="sns-links hidden-print">
+  
+  <a href="https://about.me/kseistrup">
+    <i class="fa fa-envelope"></i>
+  </a>
+  
+  
+  <a href="https://github.com/kseistrup" target="_blank">
+    <i class="fa fa-github"></i>
+  </a>
+  
+  
+  
+  
+  
+  
+  
+  
+  <a href="https://keybase.io/kseistrup" target="_blank">
+    <i class="fa fa-key"></i>
+  </a>
+  
+</div>
+
+      
+      <a href="https://kseistrup.github.io/" class="btn-header btn-back hidden-xs">
+        <i class="fa fa-angle-left" aria-hidden="true"></i>
+        &nbsp;Home
+      </a>
+      
+      
+    </section>
+  </header>
+  <main class="container">
+
+
+<article>
+  <header>
+    <h1 class="text-primary">Syntax highlighting</h1>
+    <div class="post-meta clearfix">
+      <div class="post-date pull-left">
+        Posted on
+        <time datetime="2015-08-07T19:41:35&#43;02:00">
+          Aug 7, 2015
+        </time>
+      </div>
+      <div class="pull-right">
+        
+        <span class="post-tag small"><a href="https://kseistrup.github.io//tags/test">#test</a></span>
+        
+        <span class="post-tag small"><a href="https://kseistrup.github.io//tags/python">#python</a></span>
+        
+      </div>
+    </div>
+  </header>
+  <section>
+    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+præsentium voluptatum deleniti atque corrupti quos dolores et quas molestias
+excepturi sint occæcati cupiditate non provident, similique sunt in culpa
+qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et
+harum quidem rerum facilis est et expedita distinctio. Nam libero tempore,
+cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor
+repellendus.</p>
+
+<p>Let&rsquo;s see if syntax highlighting works:</p>
+
+<p><div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span style="background-color: #f0f0f0; padding: 0 5px 0 5px"> 1 </span><span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">src</span>(obj):
+<span style="background-color: #f0f0f0; padding: 0 5px 0 5px"> 2 </span>    <span style="color: #DD4422">&quot;&quot;&quot;Read the source of an object in the interpreter.&quot;&quot;&quot;</span>
+<span style="background-color: #f0f0f0; padding: 0 5px 0 5px"> 3 </span>    <span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">highlight</span>(source):
+<span style="background-color: #f0f0f0; padding: 0 5px 0 5px"> 4 </span>        <span style="color: #008800; font-weight: bold">try</span>:
+<span style="background-color: #f0f0f0; padding: 0 5px 0 5px"> 5 </span>            <span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">pygments</span>
+<span style="background-color: #f0f0f0; padding: 0 5px 0 5px"> 6 </span>            <span style="color: #008800; font-weight: bold">from</span> <span style="color: #0e84b5; font-weight: bold">pygments.lexers</span> <span style="color: #008800; font-weight: bold">import</span> get_lexer_by_name
+<span style="background-color: #f0f0f0; padding: 0 5px 0 5px"> 7 </span>            <span style="color: #008800; font-weight: bold">from</span> <span style="color: #0e84b5; font-weight: bold">pygments.formatters.terminal</span> <span style="color: #008800; font-weight: bold">import</span> TerminalFormatter
+<span style="background-color: #f0f0f0; padding: 0 5px 0 5px"> 8 </span>        <span style="color: #008800; font-weight: bold">except</span> <span style="color: #FF0000; font-weight: bold">ImportError</span>:
+<span style="background-color: #f0f0f0; padding: 0 5px 0 5px"> 9 </span>            <span style="color: #008800; font-weight: bold">return</span> source
+<span style="background-color: #f0f0f0; padding: 0 5px 0 5px">10 </span>        <span style="color: #008800; font-weight: bold">return</span> pygments<span style="color: #333333">.</span>highlight(
+<span style="background-color: #f0f0f0; padding: 0 5px 0 5px">11 </span>            source,
+<span style="background-color: #f0f0f0; padding: 0 5px 0 5px">12 </span>            get_lexer_by_name(<span style="background-color: #fff0f0">&#39;python&#39;</span>),
+<span style="background-color: #f0f0f0; padding: 0 5px 0 5px">13 </span>            TerminalFormatter()
+<span style="background-color: #f0f0f0; padding: 0 5px 0 5px">14 </span>        )
+<span style="background-color: #f0f0f0; padding: 0 5px 0 5px">15 </span>    <span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">inspect</span>
+<span style="background-color: #f0f0f0; padding: 0 5px 0 5px">16 </span>    <span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">subprocess</span>
+<span style="background-color: #f0f0f0; padding: 0 5px 0 5px">17 </span>    source <span style="color: #333333">=</span> inspect<span style="color: #333333">.</span>getsource(obj)
+<span style="background-color: #f0f0f0; padding: 0 5px 0 5px">18 </span>    pager <span style="color: #333333">=</span> subprocess<span style="color: #333333">.</span>Popen((<span style="background-color: #fff0f0">&#39;less&#39;</span>, <span style="background-color: #fff0f0">&#39;-R&#39;</span>), stdin<span style="color: #333333">=</span>subprocess<span style="color: #333333">.</span>PIPE)
+<span style="background-color: #f0f0f0; padding: 0 5px 0 5px">19 </span>    pager<span style="color: #333333">.</span>communicate(highlight(source)<span style="color: #333333">.</span>encode(<span style="background-color: #fff0f0">&#39;utf-8&#39;</span>))
+<span style="background-color: #f0f0f0; padding: 0 5px 0 5px">20 </span>    pager<span style="color: #333333">.</span>wait()
+</pre></div>
+</p>
+
+<p>😋</p>
+
+  </section>
+  <footer>
+    
+    <section class="author-info row">
+      <div class="author-avatar col-md-2">
+        
+        <img alt="Author Avatar" src="/images/kseistrup.jpg" />
+        
+      </div>
+      <div class="author-meta col-md-6">
+        
+        <h1 class="author-name text-primary">Klaus Alexander Seistrup</h1>
+        
+        
+        <div class="author-bio">INFP (nobody can stop me from dreaming)</div>
+        
+      </div>
+      
+      <div class="author-contact col-md-4">
+        <a href="https://about.me/kseistrup">
+          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+          &nbsp;Contact me
+        </a>
+      </div>
+      
+    </section>
+    <ul class="pager">
+      
+      <li class="previous"><a href="https://kseistrup.github.io/ipsum/"><span aria-hidden="true">&larr;</span> Older</a></li>
+      
+      
+      <li class="next disabled"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
+      
+    </ul>
+  </footer>
+</article>
+
+  </main>
+  <footer class="container global-footer">
+    <div class="copyright-note pull-left">
+      © 2015 Klaus Alexander Seistrup
+    </div>
+    <div class="sns-links hidden-print">
+  
+  <a href="https://about.me/kseistrup">
+    <i class="fa fa-envelope"></i>
+  </a>
+  
+  
+  <a href="https://github.com/kseistrup" target="_blank">
+    <i class="fa fa-github"></i>
+  </a>
+  
+  
+  
+  
+  
+  
+  
+  
+  <a href="https://keybase.io/kseistrup" target="_blank">
+    <i class="fa fa-key"></i>
+  </a>
+  
+</div>
+
+  </footer>
+
+  <script src="https://kseistrup.github.io/js/highlight.pack.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  
+  
+</body>
+</html>
+
