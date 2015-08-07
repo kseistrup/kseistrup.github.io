@@ -7,8 +7,52 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2015 Klaus Alexander Seistrup</copyright>
-    <lastBuildDate>Tue, 04 Aug 2015 21:16:44 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 07 Aug 2015 19:41:35 +0200</lastBuildDate>
     <atom:link href="https://kseistrup.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Syntax highlighting</title>
+      <link>https://kseistrup.github.io/post/test-syntax-highlighting/</link>
+      <pubDate>Fri, 07 Aug 2015 19:41:35 +0200</pubDate>
+      
+      <guid>https://kseistrup.github.io/post/test-syntax-highlighting/</guid>
+      <description>&lt;p&gt;At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+præsentium voluptatum deleniti atque corrupti quos dolores et quas molestias
+excepturi sint occæcati cupiditate non provident, similique sunt in culpa
+qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et
+harum quidem rerum facilis est et expedita distinctio. Nam libero tempore,
+cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor
+repellendus.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s see if syntax highlighting works:&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #ffffff&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;background-color: #f0f0f0; padding: 0 5px 0 5px&#34;&gt; 1 &lt;/span&gt;&lt;span style=&#34;color: #008800; font-weight: bold&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color: #0066BB; font-weight: bold&#34;&gt;src&lt;/span&gt;(obj):
+&lt;span style=&#34;background-color: #f0f0f0; padding: 0 5px 0 5px&#34;&gt; 2 &lt;/span&gt;    &lt;span style=&#34;color: #DD4422&#34;&gt;&amp;quot;&amp;quot;&amp;quot;Read the source of an object in the interpreter.&amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
+&lt;span style=&#34;background-color: #f0f0f0; padding: 0 5px 0 5px&#34;&gt; 3 &lt;/span&gt;    &lt;span style=&#34;color: #008800; font-weight: bold&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color: #0066BB; font-weight: bold&#34;&gt;highlight&lt;/span&gt;(source):
+&lt;span style=&#34;background-color: #f0f0f0; padding: 0 5px 0 5px&#34;&gt; 4 &lt;/span&gt;        &lt;span style=&#34;color: #008800; font-weight: bold&#34;&gt;try&lt;/span&gt;:
+&lt;span style=&#34;background-color: #f0f0f0; padding: 0 5px 0 5px&#34;&gt; 5 &lt;/span&gt;            &lt;span style=&#34;color: #008800; font-weight: bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color: #0e84b5; font-weight: bold&#34;&gt;pygments&lt;/span&gt;
+&lt;span style=&#34;background-color: #f0f0f0; padding: 0 5px 0 5px&#34;&gt; 6 &lt;/span&gt;            &lt;span style=&#34;color: #008800; font-weight: bold&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color: #0e84b5; font-weight: bold&#34;&gt;pygments.lexers&lt;/span&gt; &lt;span style=&#34;color: #008800; font-weight: bold&#34;&gt;import&lt;/span&gt; get_lexer_by_name
+&lt;span style=&#34;background-color: #f0f0f0; padding: 0 5px 0 5px&#34;&gt; 7 &lt;/span&gt;            &lt;span style=&#34;color: #008800; font-weight: bold&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color: #0e84b5; font-weight: bold&#34;&gt;pygments.formatters.terminal&lt;/span&gt; &lt;span style=&#34;color: #008800; font-weight: bold&#34;&gt;import&lt;/span&gt; TerminalFormatter
+&lt;span style=&#34;background-color: #f0f0f0; padding: 0 5px 0 5px&#34;&gt; 8 &lt;/span&gt;        &lt;span style=&#34;color: #008800; font-weight: bold&#34;&gt;except&lt;/span&gt; &lt;span style=&#34;color: #FF0000; font-weight: bold&#34;&gt;ImportError&lt;/span&gt;:
+&lt;span style=&#34;background-color: #f0f0f0; padding: 0 5px 0 5px&#34;&gt; 9 &lt;/span&gt;            &lt;span style=&#34;color: #008800; font-weight: bold&#34;&gt;return&lt;/span&gt; source
+&lt;span style=&#34;background-color: #f0f0f0; padding: 0 5px 0 5px&#34;&gt;10 &lt;/span&gt;        &lt;span style=&#34;color: #008800; font-weight: bold&#34;&gt;return&lt;/span&gt; pygments&lt;span style=&#34;color: #333333&#34;&gt;.&lt;/span&gt;highlight(
+&lt;span style=&#34;background-color: #f0f0f0; padding: 0 5px 0 5px&#34;&gt;11 &lt;/span&gt;            source,
+&lt;span style=&#34;background-color: #f0f0f0; padding: 0 5px 0 5px&#34;&gt;12 &lt;/span&gt;            get_lexer_by_name(&lt;span style=&#34;background-color: #fff0f0&#34;&gt;&amp;#39;python&amp;#39;&lt;/span&gt;),
+&lt;span style=&#34;background-color: #f0f0f0; padding: 0 5px 0 5px&#34;&gt;13 &lt;/span&gt;            TerminalFormatter()
+&lt;span style=&#34;background-color: #f0f0f0; padding: 0 5px 0 5px&#34;&gt;14 &lt;/span&gt;        )
+&lt;span style=&#34;background-color: #f0f0f0; padding: 0 5px 0 5px&#34;&gt;15 &lt;/span&gt;    &lt;span style=&#34;color: #008800; font-weight: bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color: #0e84b5; font-weight: bold&#34;&gt;inspect&lt;/span&gt;
+&lt;span style=&#34;background-color: #f0f0f0; padding: 0 5px 0 5px&#34;&gt;16 &lt;/span&gt;    &lt;span style=&#34;color: #008800; font-weight: bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color: #0e84b5; font-weight: bold&#34;&gt;subprocess&lt;/span&gt;
+&lt;span style=&#34;background-color: #f0f0f0; padding: 0 5px 0 5px&#34;&gt;17 &lt;/span&gt;    source &lt;span style=&#34;color: #333333&#34;&gt;=&lt;/span&gt; inspect&lt;span style=&#34;color: #333333&#34;&gt;.&lt;/span&gt;getsource(obj)
+&lt;span style=&#34;background-color: #f0f0f0; padding: 0 5px 0 5px&#34;&gt;18 &lt;/span&gt;    pager &lt;span style=&#34;color: #333333&#34;&gt;=&lt;/span&gt; subprocess&lt;span style=&#34;color: #333333&#34;&gt;.&lt;/span&gt;Popen((&lt;span style=&#34;background-color: #fff0f0&#34;&gt;&amp;#39;less&amp;#39;&lt;/span&gt;, &lt;span style=&#34;background-color: #fff0f0&#34;&gt;&amp;#39;-R&amp;#39;&lt;/span&gt;), stdin&lt;span style=&#34;color: #333333&#34;&gt;=&lt;/span&gt;subprocess&lt;span style=&#34;color: #333333&#34;&gt;.&lt;/span&gt;PIPE)
+&lt;span style=&#34;background-color: #f0f0f0; padding: 0 5px 0 5px&#34;&gt;19 &lt;/span&gt;    pager&lt;span style=&#34;color: #333333&#34;&gt;.&lt;/span&gt;communicate(highlight(source)&lt;span style=&#34;color: #333333&#34;&gt;.&lt;/span&gt;encode(&lt;span style=&#34;background-color: #fff0f0&#34;&gt;&amp;#39;utf-8&amp;#39;&lt;/span&gt;))
+&lt;span style=&#34;background-color: #f0f0f0; padding: 0 5px 0 5px&#34;&gt;20 &lt;/span&gt;    pager&lt;span style=&#34;color: #333333&#34;&gt;.&lt;/span&gt;wait()
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/p&gt;
+
+&lt;p&gt;😋&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Lorem ipsum</title>
